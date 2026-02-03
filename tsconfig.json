@@ -1,7 +1,8 @@
 {
     "compilerOptions": {
-        "target": "es6",
+        "target": "es2017",
         "module": "esnext",
+        "lib": ["es2017", "dom"],
         "declaration": true,
         "declarationDir": "dist/types/src",
         "outDir": "dist",
@@ -9,8 +10,7 @@
         "moduleResolution": "node",
         "esModuleInterop": true,
         "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true,
-        "ignoreDeprecations": "6.0"
+        "forceConsistentCasingInFileNames": true
     },
     "include": ["src/**/*"],
     "exclude": ["node_modules", "**/*.test.ts"]

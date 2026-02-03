@@ -102,8 +102,11 @@ export default [
         ],
         // external: ['axios']
     },
-    {
-        input: 'dist/types/src/index.d.ts',
-        output: [{file: 'dist/index.d.ts', format: 'es'}],
-        plugins: [dts()]
-    }]
+    // 类型声明文件打包配置
+    // 注: 在构建主包后才能生成类型文件
+    // {
+    //     input: 'dist/types/src/index.d.ts',
+    //     output: [{file: 'dist/index.d.ts', format: 'es'}],
+    //     plugins: [dts()]
+    // }
+]
